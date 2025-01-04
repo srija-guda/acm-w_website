@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem;
+}
+.logo {
+  height: 60px;
+  width: auto;
+}
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar-right .cart-count {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background-color: rgba(71, 49, 74, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: rgba(204, 174, 209, 1);
+  z-index: 1000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 160px 0px 10px 10px;
+  text-align: left;
+}
+
+.sidebar-links li {
+  margin-top: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.info {
+  margin-top: auto;
+  padding-top: 20px; /* Spacing from the top */
+  text-align: left;
+}
+
+.info p {
+  font-size: 15px; /* Reduced font size */
+  color: rgba(204, 174, 209, 1); /* Color for text */
+  margin-bottom: 40px; /* Spacing below paragraph */
+  line-height: 1.5;
+}
+
+.sidebar-links li:hover {
+  color: rgba(255, 255, 255, 1);
+}
